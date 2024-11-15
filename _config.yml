@@ -640,8 +640,7 @@ jsonresume:
   - basics
   # - work
   - education
-  - conference
-  # - publications
+  - publications
   # - projects
   # - volunteer
   # - awards
