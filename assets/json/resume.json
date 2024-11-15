@@ -31,10 +31,7 @@
             "studyType": "M.S.",
             "startDate": "2023-8-20",
             "endDate": "Present",
-            "score": "10",
-            "courses": [
-                "Theory of Relativity"
-            ]
+            "score": "10"
         },
         {
             "institution": "China University of Petroleum, Beijing, China",
@@ -147,15 +144,17 @@
     ],
     "interests": [
         {
-            "name": "Physics",
+            "name": "Machine Learning",
             "icon": "fa-solid fa-tag",
             "keywords": [
-                "Quantum Mechanics",
-                "Quantum Computing",
-                "Quantum Information",
-                "Quantum Cryptography",
-                "Quantum Communication",
-                "Quantum Teleportation"
+                "AI4Science"
+            ]
+        },
+        {
+            "name": "Large Language Model",
+            "icon": "fa-solid fa-laptop",
+            "keywords": [
+                "LLMs-based Agent"
             ]
         }
     ],
