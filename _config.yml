@@ -85,8 +85,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Notes # blog_name will be displayed in your blog page
-blog_description: My Academic and Personal Journal
+blog_name: Blog # blog_name will be displayed in your blog page
+blog_description: Every now and then, I try to write something here - mostly about my research, but also about other things that I find interesting.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -384,7 +384,7 @@ enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
-enable_navbar_social: true # enables displaying social links in the navbar on the about page
+enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
