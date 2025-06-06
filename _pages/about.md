@@ -31,6 +31,6 @@ Hi, I'm Zijie Zhou :wave:
 
 Welcome to my academic corner on the web!
 
-I'm a graduate student in Artificial Intelligence at China University of Petroleum, Beijing. My research focuses on large language model and natural language processing.
+I'm a graduate student in Artificial Intelligence at <a href='https://cup.edu.cn'>China University of Petroleum, Beijing</a>. My research focuses on large language model and natural language processing.
 
 This site hosts my research and publications - feel free to explore!
