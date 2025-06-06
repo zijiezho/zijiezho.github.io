@@ -25,7 +25,7 @@ pagination:
 
   <div class="header-bar">
     <h1>{{ site.blog_name }}</h1>
-    <h3>{{ site.blog_description }}</h3>
+    <p><b>{{ site.blog_description }}</b></p>
   </div>
   {% endif %}
 
