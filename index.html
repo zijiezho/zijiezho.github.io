@@ -1,0 +1,431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+    <meta name=viewport content=“width=800”>
+    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+    <style type="text/css">
+        /* Template from Han Guo */
+
+        a {
+            color: #1772d0;
+            text-decoration: none;
+        }
+
+        a:focus,
+        a:hover {
+            color: #2E8B57;
+            text-decoration: none;
+        }
+
+        body,
+        td,
+        th,
+        tr,
+        p,
+        a {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 16px
+        }
+
+        strong {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        heading {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 22px;
+        }
+
+        papertitle {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 700
+        }
+
+        name {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 35px;
+        }
+
+        .one {
+            width: 160px;
+            height: 160px;
+            position: relative;
+        }
+
+        .two {
+            width: 160px;
+            height: 160px;
+            position: absolute;
+            transition: opacity .2s ease-in-out;
+            -moz-transition: opacity .2s ease-in-out;
+            -webkit-transition: opacity .2s ease-in-out;
+        }
+
+        .fade {
+            transition: opacity .2s ease-in-out;
+            -moz-transition: opacity .2s ease-in-out;
+            -webkit-transition: opacity .2s ease-in-out;
+        }
+
+        span.highlight {
+            background-color: #ffffd0;
+        }
+
+        /* 我自己添加的按钮 */
+        .badge {
+            display: inline-block;
+            padding: 0.35em 0.65em;
+            margin: 2px 4px 0 0;
+            font-size: 0.8em;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .badge-pdf {
+            background-color: #EF959C;
+        }
+
+        .badge-code {
+            background-color: #788fac;
+        }
+
+        .badge-video {
+            background-color: #CBB3BF;
+        }
+
+        .badge-abstract {
+            background-color: #86bfe2;
+        }
+
+        .badge-bibtex {
+            background-color: #DBC7BE;
+        }
+
+        .badge-sp {
+            background-color: #eab700;
+        }
+
+        .popup-abs {
+            font-size: .9em;
+            /* display: inline-block; */
+            border: 2px dotted #000;
+            border-color: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: transparent;
+            display: none;
+            width: 100%;
+            line-height: 1.5;
+            text-align: justify;
+            text-justify: inter-word;
+            padding: 1em;
+            /* margin: .5em; */
+            /* font-family: monospace; */
+            box-sizing: border-box;
+        }
+
+        .popup-bib {
+            font-size: .8em;
+            /* display: inline-block; */
+            border: 2px dotted #000;
+            border-color: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: transparent;
+            display: none;
+            width: 100%;
+            line-height: 1.5;
+            padding: 1em;
+            /* margin: .5em; */
+            font-family: monospace;
+            /* font-family: 'Courier New', Courier, monospace; */
+            box-sizing: border-box;
+        }
+
+        .popup-abs+.popup-bib {
+            margin-top: 1em;
+            /* 这是空行，不是分割线 */
+        }
+
+
+
+        /* 结束 */
+    </style>
+    <link rel="icon" type="image/png" href="seal_icon.png">
+    <title>Zijie Zhou</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+    <script src="./utils.js"></script>
+</head>
+
+<body>
+    <!-- Replace dropdown with Sky Lab style header -->
+    <div style="background-color: transparent; width: 100%; padding: 15px 0;">
+        <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+                    <span style="font-family: 'Lato', sans-serif; font-size: 24px;">
+                        <a href="index.html" style="color: black; margin-left: 20px; text-decoration: none;"
+                            onmouseover="this.style.color='black'" onmouseout="this.style.color='black'">Home</a>
+                        <!-- <a href="index.html" style="color: black; text-decoration: none;">
+                            <b>Zijie Zhou</b>
+                        </a> -->
+                    </span>
+                    <!-- <span style="float: right;">
+                        <a href="index.html" style="color: black; margin-left: 20px; text-decoration: none;"
+                            onmouseover="this.style.color='black'" onmouseout="this.style.color='black'">Home</a>
+                        <a href="publications.html" style="color: #FDB515; margin-left: 20px; text-decoration: none;"
+                            onmouseover="this.style.color='black'"
+                            onmouseout="this.style.color='#FDB515'">Publications</a>
+                    </span> -->
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="67%" valign="middle">
+                            <p align="center">
+                                <name>Zijie Zhou</name>
+                            </p>
+                            <p>
+                                Hello! I am a second-year Master at <a href="https://cup.edu.cn">China University of
+                                    Petroleum
+                                    (Beijing)</a> advised by Prof. Dandan Zhu and Prof. <a
+                                    href="https://le.ac.uk/people/huiyu-zhou">Huiyu Zhou</a>.
+                                I am also spent time as a visiting student at <a href="https://www.ucr.edu">University
+                                    of California,
+                                    Riverside</a>, where I was advised by Prof.
+                                <a href="https://yinglunz.com">
+                                    Yinglun Zhu </a>.
+                                I completed my undergraduate degree in Artificial Intelligence at CUP Beijing.
+                                <br>
+                                <br>
+                                I'm interested in building an AI system that can automatically collect information from
+                                diverse sources, conduct deliberate practice, and decide how to spend time, compute, and
+                                storage to handle complex tasks.
+                                <!-- <br>
+                                <br>
+                                I looking for Ph.D. opportunities in the AI field, especially in the areas of LLMs,
+                                MLLMs and their applications. -->
+                            </p>
+                            <p align=center>
+                                <a href="https://scholar.google.com/citations?user=z6Jm1bIAAAAJ&hl=en">Google
+                                    Scholar</a> &nbsp/&nbsp
+                                <!-- <a href="https://github.com/zijiezho"> GitHub </a> &nbsp/&nbsp -->
+                                <a href="assets/ZijieZhou_CV.pdf"> CV </a> &nbsp/&nbsp
+                                <a href="https://twitter.com/heyzijie"> X (Twitter) </a> &nbsp/&nbsp
+                                <!-- <a href="https://www.linkedin.com/in/zijie-zhou-55469736a/"> LinkedIn </a> &nbsp/&nbsp -->
+                                <a href="mailto:zhouzijie@student.cup.edu.cn"> Email </a>
+                            </p>
+                        </td>
+                        <td width="33%">
+                            <img src="figures/photo.jpg" style="width: 80%; margin-top: 50px;">
+                        </td>
+                    </tr>
+                </table>
+
+
+                <!-- News -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="60%" valign="middle">
+                            <heading>News</heading>
+                            <ul>
+                                <li> <b>2025-07</b> Joined the <a href="https://www.ucr.edu">UC Riverside</a> as a
+                                    Visiting
+                                    Student, working with Prof. Yinglun Zhu on efficient reinforcement learning for
+                                    LLMs. </li>
+                                <li> <b>2025-05</b> One paper got accepeted to <i>Petroleum Science</i>. (Journal)</li>
+                                <li> <b>2024-07</b> One paper got accepeted to <i>ICANN'2024</i>. </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- Researches -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="100%" valign="middle">
+                            <heading>Publications</heading>
+                            <p>* <i>indicates equal contribution</i> </p>
+                    </tr>
+                </table>
+
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+                    <!-- Projects -->
+                    <tr>
+                        <td width="25%" id="icann24-img" style="vertical-align: top;"></td>
+                        <td valign="top" width="75%" id="icann24-txt"></td>
+                    </tr>
+                    <script type="text/javascript">
+                        createProjectElement(
+                            id = "icann24", {
+                            title: "Small Object Detection Based on Bidirectional Feature Fusion and Multi-scale Distillation",
+                            paper_url: "https://doi.org/10.1007/978-3-031-72335-3_14",
+                            authors: "Lingyu Wang, <b>Zijie Zhou</b>, Guanqun Shi, Junkang Guo, Zhigang Liu",
+                            conference: "International Conference on Artificial Neural Networks (ICANN) 2024",
+                            image: "figures/icann_24.png",
+                            abstract: `&nbsp;&nbsp; In this paper, we present a novel approach to address the challenges of small object detection. The proposed method combines multi-scale distillation and bidirectional feature fusion to enhance the performance of small object detection models. By leveraging the knowledge of a teacher model, the student model captures both high-level and low-level features, leading to improved detection results. Then, bidirectional feature fusion aggregates multi-layer features within the student more effectively via a convolutional attention mechanism and pyramid pooling loss function. Extensive experiments demonstrate that the approach significantly improves small object detection performance over baselines, validating the use of multi-scale knowledge distillation and feature fusion techniques for this task.`,
+                            pdf: "https://doi.org/10.1007/978-3-031-72335-3_14",
+                            bibtex: `@InProceedings{10.1007/978-3-031-72335-3_14, <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;author="Wang, Lingyu <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;and Zhou, Zijie <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;and Shi, Guanqun <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;and Guo, Junkang <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;and Liu, Zhigang", <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;editor="Wand, Michael <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;and Malinovsk{\'a}, Krist{\'i}na <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;and Schmidhuber, J{\"u}rgen <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;and Tetko, Igor V.", <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;title="Small Object Detection Based on Bidirectional Feature Fusion and Multi-scale Distillation", <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;booktitle="Artificial Neural Networks and Machine Learning -- ICANN 2024", <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;year="2024", <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;publisher="Springer Nature Switzerland", <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;address="Cham", <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;pages="200--214", <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;isbn="978-3-031-72335-3" <br>
+                                    }
+                                    `,
+                            others: null
+                        });
+                    </script>
+
+
+                    <tr>
+                        <td width="25%" id="drilling-img" style="vertical-align: top;"></td>
+                        <td valign="top" width="75%" id="drilling-txt"></td>
+                    </tr>
+                    <script type="text/javascript">
+                        createProjectElement(
+                            id = "drilling", {
+                            title: "An intelligent drilling guide algorithm design framework based on high interactive learning mechanism",
+                            paper_url: "https://doi.org/10.1016/j.petsci.2025.05.019",
+                            authors: "Yi Zhao, Dandan Zhu, Fei Wang, Xinping Dai, Huishen Jiao, <b>Zijie Zhou</b>",
+                            conference: "Petroleum Science",
+                            image: "figures/drilling_25.png",
+                            abstract: `Measurement-while-drilling (MWD) and guidance technologies have been extensively deployed in the exploitation of oil, natural gas, and other energy resources. Conventional control approaches are plagued by challenges, including limited anti-interference capabilities and the insufficient generalization of decision-making experience. To address the intricate problem of directional well trajectory control, an intelligent algorithm design framework grounded in the high-level interaction mechanism between geology and engineering is put forward. This framework aims to facilitate the rapid batch migration and update of drilling strategies. The proposed directional well trajectory control method comprehensively considers the multi-source heterogeneous attributes of drilling experience data, leverages the generative simulation of the geological drilling environment, and promptly constructs a directional well trajectory control model with self-adaptive capabilities to environmental variations. This construction is carried out based on three hierarchical levels: “offline pre-drilling learning, online during-drilling interaction, and post-drilling model transfer”. Simulation results indicate that the guidance model derived from this method demonstrates remarkable generalization performance and accuracy. It can significantly boost the adaptability of the control algorithm to diverse environments and enhance the penetration rate of the target reservoir during drilling operations.`,
+                            pdf: "https://pdf.sciencedirectassets.com/780151/AIP/1-s2.0-S199582262500189X/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDmtedBolhPhztnxN%2F%2BtoW7s6fI1Z4TC0ZcKAWfR3YpkwIhAL9l16JZcWINzmY0bZ3ZZyRywCi31B%2BCVlMbvay%2Fz9axKrsFCL3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBRoMMDU5MDAzNTQ2ODY1IgzOU7WuKrQSjfOB4vQqjwXi249LSor%2Fy4ESiW96H6soCmWQzjhNoNM2X8dJM5UUbT1ONaEx4yumAnsnpQgOSaKSM7dPMHLVZI%2FAohXxFo%2FgQZaACDTusZfTuJ1qSe%2FKXmdvw91vISOgc0IM0VSIVN25f8DV77hrgiwo2qVXxmClE6VIFOlrDar9PBf0It%2FJPtBVPH%2FlOUu8AfVBg4ZQHVE2LQkE1eA%2B7RkCy%2B%2BXRwRkhHb7YfIxhxTLrVvzsXJwMM9khwobX%2B8vKQibIcvqSB8%2B6zWZmFGZkBJwubVEi26B5ZJZzjNRIhMkAKeHS75wR1149veGb7aSw440dYyVk1XSCkAtcWZbpO1HTztMrUC9pWgH96HDXHJzUwO0gLEnWJrzzyBc6myze9yNKKXD8e%2B1OQnycm%2FvRlMJHiEFCYiaKviK0tX%2FcHgg67M9d8BzHQ39yfvxQo6mi0xsyYLllRpGWnQuAkbDh6mBs89am8FKNcIFJTjnXBkgr3J1oEe8yWS65mYGsvHFsZxX5cWR%2FKXrgZwvaUTenIGxW5e58URm7%2BMwrJsCMVXj6uKzBkKmnkOQl302NmGYcdmqWxhGBLlayixMjqFpFV408TPj9RQFt53k4MamWTvqBU0TDmsC7pglf%2BmAD7W9WH24F9F3YgcE5KDeLW1B%2BtxP58JDG15plyrwxWIMhHcYJsC89HhzmUm7RaapwW21tNSxC2lPAYu6V1v%2FkpqFlNk3Ir5GutSPnSsXSCfsqcHQ%2BfNe5pWThMr%2F%2BSPfJFyQj8QPx7NZi3MO1PCNT7fQ8jG7uJ8TVDwd7%2FFpI6eZaivnz7UMZzBx6s3xRF44%2FswNiCMEK1y%2Bx0Jyfk%2FJQVWt0wIufyF%2Bdt6QAOd92TmVc%2FE2b0OSoELSMP3t3MQGOrAB9tN6wTnNiyKGwVAEbxwBDWwFI%2BtjhfXR2CNaW%2Fv6Z%2FhG0jm0xmDvPUHw66DPUZOkP9Q5BK21bvsDgvyH8VbLdEAWcp7ZNi0Bg0LwBmBU1drY8HXz1DtbUfTqTb4agpaOBvRFAOFywejQhu%2FcG1HZzERjfvdH3fv%2BCE2i%2BnlyGiGdqZWpk8D0idLRRVn4HiL6qcd1V8JfXvRWkvVpLrPu8BXMlRb1AeCTUlT68anibjc%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250809T124454Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY3XGCI47M%2F20250809%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=20db344b3cffc8fed90f03cee11575ada278dfa8c79679ac1abccd1970a0ee8c&hash=dd32a226bc2e6ad24dcdbefc003fe8a6fee6715b2901ee90b0103368bc4b0523&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S199582262500189X&tid=spdf-f3ba07fb-f3b1-4370-b203-fcfcec47b3c8&sid=75b013af7e1fa143be1bb522aff5b43c3c93gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=120e5e5901535658095306&rr=96c758f4adbddd51&cc=hk&kca=eyJrZXkiOiJ5TGd0L3Jsd0IzZ1Fib3FqNjQvZk4yaEl0RTMxZkZUcWxSc1BSRC9JcjJzTUlXTXVaMUV0RXErdE9VSC8zNFdJYnZtbzBBS01jRnBBTm1WWUFoUDFTY2dkb21ackp6aTUvVTJzUDRjU0xBbTYvUG1CRDBwNThaZVBJMGlCREtPYWFZaTVSZGRZdVFQbFZpMmZlMWM2YkFMMDBvcjdkODVMRDhRYlYzS0tYZytJbFZtSXpBPT0iLCJpdiI6IjRjMTMzMDIxNjM1YmE3NWQ3Mjk2ZDUxNWFkNTQ5NWYzIn0=_1754743502766",
+                            bibtex: `@article{ZHAO2025, <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;title = {An intelligent drilling guide algorithm design framework based on highly interactive learning mechanism}, <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;journal = {Petroleum Science}, <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;year = {2025}, <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;issn = {1995-8226}, <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;doi = {https://doi.org/10.1016/j.petsci.2025.05.019}, <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;url = {https://www.sciencedirect.com/science/article/pii/S199582262500189X}, <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;author = {Yi Zhao and Dan-Dan Zhu and Fei Wang and Xin-Ping Dai and Hui-Shen Jiao and Zi-Jie Zhou} <br>
+                                    }`,
+                            others: null
+                        });
+                    </script>
+
+
+                    <tr>
+                        <td width="25%" id="3dSpatial-img" style="vertical-align: top;"></td>
+                        <td valign="top" width="75%" id="3dSpatial-txt"></td>
+                    </tr>
+                    <script type="text/javascript">
+                        createProjectElement(
+                            id = "3dSpatial", {
+                            title: "A Novel Directional Drilling Decision Method Based on 3D Spatial Wide-Angle Detection Mechanism",
+                            paper_url: "https://dx.doi.org/10.2139/ssrn.5313712",
+                            // code: "http://cup.edu.cn",
+                            authors: "Dandan Zhu, <b>Zijie Zhou</b>, Xinping Dai, Liping Zhu, Junliang Yuan, Ke Zhang",
+                            conference: "Preprint",
+                            // award: "🏆 Best Resource Paper",
+                            image: "figures/3DSpatial_25.png",
+                            abstract: `&nbsp;&nbsp; In the process of oil and gas development, the decision of drilling direction is a 
+                                        challenging task, and the abrasive, anisotropic, and non-homogeneous nature of stratum rocks often easily 
+                                        leads to the drilling bit to deviate from the intended trajectory. The traditional method is mainly based on 
+                                        pre-drilling measurement data to establish a geological model, design the borehole trajectory, and then optimize 
+                                        and adjust drilling parameters, but this method often shows the problems of large trajectory deviation, weak 
+                                        adaptive ability, and constrained real-time decision-making capabilities during practical drilling operations. 
+                                        To overcome these problems, an innovative 3D Spatial Wide-Angle Detection (3D-SWAD) Drilling Direction Decision 
+                                        Algorithm is proposed in this paper. The method introduces a spatial wide-angle detection mechanism, which can 
+                                        effectively capture the 3D information of the stratum encountered during drilling by integrating the data in the 
+                                        3D space near the drill bit and the information of the undrilled stratum in front of the drill bit. Through the 
+                                        self-attention mechanism, the identification and utilization of key features in the drilling process are enhanced 
+                                        to provide more accurate guidance decision support. The ablation experiments demonstrate the effectiveness of BiLSTM, 
+                                        depthwise separable convolution, asymmetric structure, and self-attention module in the model. In addition, comparison 
+                                        experiments on our own dataset and public datasets show that compared with mainstream spatio-temporal sequence models 
+                                        (e.g., 3D-CNN, ConvLSTM, etc.), our model achieves a 2%-6% improvement in accuracy and a 3%-10% improvement in the probability of penetration.`,
+                            pdf: "https://dx.doi.org/10.2139/ssrn.5313712",
+                            bibtex: `@article{zhunovel, <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;title={A Novel Directional Drilling Decision Method Based on 3d Spatial Wide-Angle Detection Mechanism},<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;author={Zhu, Dandan and Zhou, Zijie and Dai, Xinping and Zhu, Liping and Yuan, Junliang and Zhang, Ke and others}
+                                    }`,
+                            others: null,
+
+                        });
+                    </script>
+
+
+
+                    <!-- Awards -->
+                    <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                        <tr>
+                            <td width="100%" valign="middle">
+                                <heading>Awards</heading>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+                        <tr>
+                            <td width="25%" id="secure_inference_ara-img"></td>
+                            <td valign="top" width="75%" id="secure_inference_ara-txt"></td>
+                        </tr>
+                        <script type="text/javascript">
+                            createProjectElement(
+                                id = "secure_inference_ara", {
+                                title: "A Faster and More Accurate Secure Model Serving Framework on the Cloud",
+                                authors: "PI: Eric P. Xing",
+                                paper_url: "awards/amazon_funding_secure_serving.pdf",
+                                conference: "Amazon Research Awards ($80000)",
+                                image: "figures/secure_inference_ara.PNG",
+                                others: null
+                            });
+                        </script> -->
+
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                        <tr>
+                            <td>
+                                <br>
+                                <p align="left">
+                                    <font size="2">
+                                        Copyright © Zijie Zhou 2025
+                                        <!-- Last updated: August, 04, 2025 -->
+                                    </font>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <script type="text/javascript">
+                        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+                    </script>
+                    <script type="text/javascript">
+                        try {
+                            var pageTracker = _gat._getTracker("UA-7580334-1");
+                            pageTracker._trackPageview();
+                        } catch (err) { }
+                    </script>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
