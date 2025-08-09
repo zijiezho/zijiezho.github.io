@@ -150,9 +150,16 @@
 
         .popup-abs+.popup-bib {
             margin-top: 1em;
-            /* 这是空行，不是分割线 */
         }
 
+        .blockquote {
+            margin-block: 2em 0em;
+            margin-inline-end: 1em;
+            margin-inline-start: 1em;
+            padding-inline: 1em;
+            font-style: italic;
+            border-inline-start: 0.25em solid #b60000;
+        }
 
 
         /* 结束 */
@@ -259,7 +266,7 @@
                     <tr>
                         <td width="100%" valign="middle">
                             <heading>Publications</heading>
-                            <p>* <i>indicates equal contribution</i> </p>
+                            <p class="blockquote">* indicates equal contribution</p>
                     </tr>
                 </table>
 
@@ -317,7 +324,7 @@
                             conference: "Petroleum Science",
                             image: "figures/drilling_25.png",
                             abstract: `Measurement-while-drilling (MWD) and guidance technologies have been extensively deployed in the exploitation of oil, natural gas, and other energy resources. Conventional control approaches are plagued by challenges, including limited anti-interference capabilities and the insufficient generalization of decision-making experience. To address the intricate problem of directional well trajectory control, an intelligent algorithm design framework grounded in the high-level interaction mechanism between geology and engineering is put forward. This framework aims to facilitate the rapid batch migration and update of drilling strategies. The proposed directional well trajectory control method comprehensively considers the multi-source heterogeneous attributes of drilling experience data, leverages the generative simulation of the geological drilling environment, and promptly constructs a directional well trajectory control model with self-adaptive capabilities to environmental variations. This construction is carried out based on three hierarchical levels: “offline pre-drilling learning, online during-drilling interaction, and post-drilling model transfer”. Simulation results indicate that the guidance model derived from this method demonstrates remarkable generalization performance and accuracy. It can significantly boost the adaptability of the control algorithm to diverse environments and enhance the penetration rate of the target reservoir during drilling operations.`,
-                            pdf: "https://pdf.sciencedirectassets.com/780151/AIP/1-s2.0-S199582262500189X/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDmtedBolhPhztnxN%2F%2BtoW7s6fI1Z4TC0ZcKAWfR3YpkwIhAL9l16JZcWINzmY0bZ3ZZyRywCi31B%2BCVlMbvay%2Fz9axKrsFCL3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBRoMMDU5MDAzNTQ2ODY1IgzOU7WuKrQSjfOB4vQqjwXi249LSor%2Fy4ESiW96H6soCmWQzjhNoNM2X8dJM5UUbT1ONaEx4yumAnsnpQgOSaKSM7dPMHLVZI%2FAohXxFo%2FgQZaACDTusZfTuJ1qSe%2FKXmdvw91vISOgc0IM0VSIVN25f8DV77hrgiwo2qVXxmClE6VIFOlrDar9PBf0It%2FJPtBVPH%2FlOUu8AfVBg4ZQHVE2LQkE1eA%2B7RkCy%2B%2BXRwRkhHb7YfIxhxTLrVvzsXJwMM9khwobX%2B8vKQibIcvqSB8%2B6zWZmFGZkBJwubVEi26B5ZJZzjNRIhMkAKeHS75wR1149veGb7aSw440dYyVk1XSCkAtcWZbpO1HTztMrUC9pWgH96HDXHJzUwO0gLEnWJrzzyBc6myze9yNKKXD8e%2B1OQnycm%2FvRlMJHiEFCYiaKviK0tX%2FcHgg67M9d8BzHQ39yfvxQo6mi0xsyYLllRpGWnQuAkbDh6mBs89am8FKNcIFJTjnXBkgr3J1oEe8yWS65mYGsvHFsZxX5cWR%2FKXrgZwvaUTenIGxW5e58URm7%2BMwrJsCMVXj6uKzBkKmnkOQl302NmGYcdmqWxhGBLlayixMjqFpFV408TPj9RQFt53k4MamWTvqBU0TDmsC7pglf%2BmAD7W9WH24F9F3YgcE5KDeLW1B%2BtxP58JDG15plyrwxWIMhHcYJsC89HhzmUm7RaapwW21tNSxC2lPAYu6V1v%2FkpqFlNk3Ir5GutSPnSsXSCfsqcHQ%2BfNe5pWThMr%2F%2BSPfJFyQj8QPx7NZi3MO1PCNT7fQ8jG7uJ8TVDwd7%2FFpI6eZaivnz7UMZzBx6s3xRF44%2FswNiCMEK1y%2Bx0Jyfk%2FJQVWt0wIufyF%2Bdt6QAOd92TmVc%2FE2b0OSoELSMP3t3MQGOrAB9tN6wTnNiyKGwVAEbxwBDWwFI%2BtjhfXR2CNaW%2Fv6Z%2FhG0jm0xmDvPUHw66DPUZOkP9Q5BK21bvsDgvyH8VbLdEAWcp7ZNi0Bg0LwBmBU1drY8HXz1DtbUfTqTb4agpaOBvRFAOFywejQhu%2FcG1HZzERjfvdH3fv%2BCE2i%2BnlyGiGdqZWpk8D0idLRRVn4HiL6qcd1V8JfXvRWkvVpLrPu8BXMlRb1AeCTUlT68anibjc%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250809T124454Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY3XGCI47M%2F20250809%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=20db344b3cffc8fed90f03cee11575ada278dfa8c79679ac1abccd1970a0ee8c&hash=dd32a226bc2e6ad24dcdbefc003fe8a6fee6715b2901ee90b0103368bc4b0523&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S199582262500189X&tid=spdf-f3ba07fb-f3b1-4370-b203-fcfcec47b3c8&sid=75b013af7e1fa143be1bb522aff5b43c3c93gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=120e5e5901535658095306&rr=96c758f4adbddd51&cc=hk&kca=eyJrZXkiOiJ5TGd0L3Jsd0IzZ1Fib3FqNjQvZk4yaEl0RTMxZkZUcWxSc1BSRC9JcjJzTUlXTXVaMUV0RXErdE9VSC8zNFdJYnZtbzBBS01jRnBBTm1WWUFoUDFTY2dkb21ackp6aTUvVTJzUDRjU0xBbTYvUG1CRDBwNThaZVBJMGlCREtPYWFZaTVSZGRZdVFQbFZpMmZlMWM2YkFMMDBvcjdkODVMRDhRYlYzS0tYZytJbFZtSXpBPT0iLCJpdiI6IjRjMTMzMDIxNjM1YmE3NWQ3Mjk2ZDUxNWFkNTQ5NWYzIn0=_1754743502766",
+                            pdf: "https://doi.org/10.1016/j.petsci.2025.05.019",
                             bibtex: `@article{ZHAO2025, <br>
                                     &nbsp;&nbsp;&nbsp;&nbsp;title = {An intelligent drilling guide algorithm design framework based on highly interactive learning mechanism}, <br>
                                     &nbsp;&nbsp;&nbsp;&nbsp;journal = {Petroleum Science}, <br>
