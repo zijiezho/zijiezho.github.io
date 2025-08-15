@@ -27,7 +27,7 @@ function createProjectElement(id, project) {
         award += `<div><span class="badge badge-sp">${project.award}</span></div>`;
     }
     if (project.abstract) {
-        buttons += `<span class="badge badge-abstract" onclick="show('abstract-${id}')">Abstract</span>`;
+        buttons += `<span class="badge badge-abstract" onclick="show('abstract-${id}')">Abstract</span> `;
     }
     if (project.pdf) {
         buttons += `<a href="${project.pdf}" target="_blank"><span class="badge badge-pdf">PDF</span></a> `;
@@ -39,7 +39,7 @@ function createProjectElement(id, project) {
         buttons += `<a href="${project.video}" target="_blank" class="badge badge-video">Video</a> `;
     }
     if (project.bibtex) {
-        buttons += `<span class="badge badge-bibtex" onclick="show('bibtex-${id}')">Bibtex</span>`;
+        buttons += `<span class="badge badge-bibtex" onclick="show('bibtex-${id}')">Bibtex</span> `;
     }
 
 
