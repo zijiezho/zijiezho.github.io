@@ -39,7 +39,7 @@ function createProjectElement(id, project) {
         buttons += `<a href="${project.video}" target="_blank" class="badge badge-video">Video</a> `;
     }
     if (project.bibtex) {
-        buttons += `<span class="badge badge-bibtex" onclick="show('bibtex-${id}')">Bibtex</span> `;
+        buttons += `<span class="badge badge-bibtex" onclick="show('bibtex-${id}')">Bibtex</span>`;
     }
 
 
