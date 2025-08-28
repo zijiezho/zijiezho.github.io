@@ -302,11 +302,13 @@
                         createProjectElement(
                             id = "PrefGen", {
                             title: "PrefGen: A Preference-Driven Methodology for Secure Yet Gas-Efficient Smart Contract Generation",
-                            paper_url: "",
+                            paper_url: "assets/PrefGen.pdf",
                             authors: "Zhiyuan Peng, Xin Yin, <b>Zijie Zhou</b>, Chenhao Ying, Chao Ni, Yuan Luo",
                             conference: "IEEE/ACM International Conference on Automated Software Engineering (ASE) 2025",
                             image: "figures/PrefGen_25.png",
                             abstract: `&nbsp;&nbsp; While Large Language Models (LLMs) have demonstrated remarkable progress in generating functionally correct Solidity code, they continue to face critical challenges in producing gas-efficient and secure code, which are critical requirements for real-world smart contract deployment. Although recent advances leverage Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO) for code preference alignment, existing approaches treat functional correctness, gas optimization, and security as independent objectives, resulting in contracts that may achieve operational soundness but suffer from prohibitive execution costs or dangerous vulnerabilities. To address these limitations, we propose PrefGen, a novel framework that extends standard DPO beyond human preferences to incorporate quantifiable blockchain-specific metrics, enabling holistic multi-objective optimization specifically tailored for smart contract generation. Our framework introduces a comprehensive evaluation methodology with four complementary metrics: Pass@k (functional correctness), Compile@k (syntactic correctness), Gas@k (gas efficiency), and Secure@k (security assessment), providing rigorous multi-dimensional contract evaluation. Through extensive experimentation, we demonstrate that PrefGen significantly outperforms existing approaches across all critical dimensions, achieving 66.7% Pass@5, 58.9% Gas@5, and 62.5% Secure@5, while generating production-ready smart contracts that are functionally correct, cost-efficient, and secure.`,
+                            pdf: "assets/PrefGen.pdf",
+                            // code: "https://github.com/pzy2000/SolEval",
                             others: null
                         });
                     </script>
