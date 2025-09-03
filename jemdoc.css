@@ -1,0 +1,163 @@
+/* Template from Han Guo */
+
+a {
+    color: #1772d0;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #673AB7;
+    text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 16px
+}
+
+strong {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+papertitle {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700
+}
+
+name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+.one {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.two {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+    background-color: #ffffd0;
+}
+
+/* 我自己添加的按钮 */
+.badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    margin: 2px 4px 0 0;
+    font-size: 0.8em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.badge-pdf {
+    background-color: #EF959C;
+}
+
+.badge-code {
+    background-color: #788fac;
+}
+
+.badge-video {
+    background-color: #CBB3BF;
+}
+
+.badge-abstract {
+    background-color: #86bfe2;
+}
+
+.badge-bibtex {
+    background-color: #DBC7BE;
+}
+
+.badge-sp {
+    background-color: #eab700;
+}
+
+.popup-abs {
+    font-size: .9em;
+    /* display: inline-block; */
+    border: 2px dotted #000;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: transparent;
+    display: none;
+    width: 100%;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 1em;
+    /* margin: .5em; */
+    /* font-family: monospace; */
+    box-sizing: border-box;
+}
+
+.popup-bib {
+    font-size: .8em;
+    /* display: inline-block; */
+    border: 2px dotted #000;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: transparent;
+    display: none;
+    width: 100%;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 1em;
+    /* margin: .5em; */
+    font-family: monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    box-sizing: border-box;
+}
+
+.popup-abs+.popup-bib {
+    margin-top: 1em;
+}
+
+.blockquote {
+    margin-block: 2em 0em;
+    margin-inline-end: 1em;
+    margin-inline-start: 1em;
+    padding-inline: 1em;
+    font-style: italic;
+    border-inline-start: 0.25em solid #b60000;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
+}
