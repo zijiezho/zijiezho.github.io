@@ -49,25 +49,21 @@
                                 <name>Zijie Zhou</name>
                             </p>
                             <p>
-                                Hello! I am a second-year Master's student at <a href="https://cup.edu.cn">China
+                                Hello! I am a final-year Master's student at <a href="https://cup.edu.cn">China
                                     University of
                                     Petroleum
-                                    (Beijing)</a>, under the supervision of Associate Professor Dandan Zhu, in
-                                collaboration with Professor <a href="https://le.ac.uk/people/huiyu-zhou">Huiyu
-                                    Zhou</a>.
-                                I am also spent time as a visiting student at <a href="https://www.ucr.edu">University
-                                    of California,
-                                    Riverside</a>, where I was advised by Assistant Professor
-                                <a href="https://yinglunz.com">
-                                    Yinglun Zhu</a>.
+                                    (Beijing)</a>, under the supervision of Associate Professor <a
+                                    href="https://www.cup.edu.cn/cupai/szdw/jsml/856a0903b2ea4e78a1e6001ba846b9d3.htm">Dandan
+                                    Zhu</a>.
                                 I completed my undergraduate degree in Artificial Intelligence at CUP Beijing.
                                 <br>
                                 <br>
                                 I have broad interests in:
                                 <br>
                             <ul>
-                                <li>Efficient algorithms for training and inference</li>
-                                <li>Understanding and enhancing multilingual capabilities of LLMs</li>
+                                <li>Efficient and Trustworthy Multimodal Agents</li>
+                                <li>Graph-enhanced Retrieval-Augmented Generation (RAG)</li>
+                                <li>Reinforcement Learning for LLM Optimization</li>
                             </ul>
                             </p>
                             <p align=center>
@@ -75,11 +71,11 @@
                                         Scholar</b></a> &nbsp|&nbsp
                                 <!-- <a href="https://github.com/zijiezho" class="social-link"> <b>GitHub</b> </a>
                                 &nbsp|&nbsp -->
-                                <a href="assets/Zijie_Zhou_CV.pdf"> <b>CV</b> </a> &nbsp|&nbsp
+                                <a href="assets/ZijieZhou-CV.pdf"> <b>CV</b> </a> &nbsp|&nbsp
                                 <a href="https://twitter.com/heyzijie"> <b>X (Twitter)</b> </a> &nbsp|&nbsp
                                 <a href="https://www.linkedin.com/in/zijie-zhou-55469736a/"> <b>LinkedIn</b> </a>
                                 &nbsp|&nbsp
-                                <a href="mailto:zhouzijie[AT]student.cup.edu.cn"> <b>Email</b> </a>
+                                <a href="mailto:zjzhouzh[AT]gmail.com"> <b>Email</b> </a>
                             </p>
                             <!-- <p align="left">
                                 <span><a href="https://scholar.google.com/citations?user=z6Jm1bIAAAAJ&hl=en"
@@ -112,13 +108,9 @@
                         <td width="60%" valign="middle">
                             <heading>News</heading>
                             <ul>
-                                <li> <b>2025-08</b> <a href="">PrefGen</a> is accepeted at <i>ASE 2025.</i></li>
-                                <li> <b>2025-07</b> Joined the <a href="https://www.ucr.edu">UC Riverside</a> as a
-                                    Visiting
-                                    Student, working with Assistant Professor Yinglun Zhu on efficient reinforcement
-                                    learning for
-                                    LLMs. </li>
-                                <li> <b>2025-05</b> One paper got accepeted to <i>Petroleum Science</i>(Journal).</li>
+                                <li> <b>2025-12</b> One paper got accepeted to <i>IEEE Transactions on Artificial
+                                        Intelligence</i> (Journal). </li>
+                                <li> <b>2025-05</b> One paper got accepeted to <i>Petroleum Science</i> (Journal).</li>
                                 <li> <b>2024-07</b> One paper got accepeted to <i>ICANN 2024</i>. </li>
                             </ul>
                         </td>
@@ -137,26 +129,67 @@
                 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
                     <!-- Projects -->
+
+                    <!-- PolarMem -->
                     <tr>
-                        <td width="25%" id="PrefGen-img" style="vertical-align: top;"></td>
-                        <td valign="top" width="75%" id="PrefGen-txt"></td>
+                        <td width="25%" id="PolarMem-img" style="vertical-align: top;"></td>
+                        <td valign="top" width="75%" id="PolarMem-txt"></td>
                     </tr>
                     <script type="text/javascript">
                         createProjectElement(
-                            id = "PrefGen", {
-                            title: "PrefGen: A Preference-Driven Methodology for Secure Yet Gas-Efficient Smart Contract Generation",
-                            paper_url: "assets/publications/PrefGen.pdf",
-                            authors: "Zhiyuan Peng, Xin Yin, <b>Zijie Zhou</b>, Chenhao Ying, Chao Ni, Yuan Luo",
-                            conference: "IEEE/ACM International Conference on Automated Software Engineering (ASE) 2025",
-                            image: "figures/PrefGen_25.png",
-                            abstract: `&nbsp;&nbsp; While Large Language Models (LLMs) have demonstrated remarkable progress in generating functionally correct Solidity code, they continue to face critical challenges in producing gas-efficient and secure code, which are critical requirements for real-world smart contract deployment. Although recent advances leverage Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO) for code preference alignment, existing approaches treat functional correctness, gas optimization, and security as independent objectives, resulting in contracts that may achieve operational soundness but suffer from prohibitive execution costs or dangerous vulnerabilities. To address these limitations, we propose PrefGen, a novel framework that extends standard DPO beyond human preferences to incorporate quantifiable blockchain-specific metrics, enabling holistic multi-objective optimization specifically tailored for smart contract generation. Our framework introduces a comprehensive evaluation methodology with four complementary metrics: Pass@k (functional correctness), Compile@k (syntactic correctness), Gas@k (gas efficiency), and Secure@k (security assessment), providing rigorous multi-dimensional contract evaluation. Through extensive experimentation, we demonstrate that PrefGen significantly outperforms existing approaches across all critical dimensions, achieving 66.7% Pass@5, 58.9% Gas@5, and 62.5% Secure@5, while generating production-ready smart contracts that are functionally correct, cost-efficient, and secure.`,
-                            pdf: "assets/PrefGen.pdf",
-                            // code: "https://github.com/pzy2000/SolEval",
+                            id = "PolarMem", {
+                            title: "PolarMem: A Training-Free Polarized Latent Graph Memory for Verifiable Multimodal Agents",
+                            paper_url: "https://arxiv.org/pdf/2602.00415",
+                            authors: "Zhisheng Chen*, Tingyu Wu*, <b>Zijie Zhou*</b>, Zhengwei Xie, Ziyan Weng, Yingwei Zhang",
+                            conference: "arXiv preprint 2026",
+                            image: "figures/PolarMem.png",
+                            abstract: `As multimodal agents evolve from passive observers to long-horizon decision-makers, they require memory systems that provide not just information availability but logical verifiability. A fundamental limitation of current architectures is the epistemic asymmetry inherent in probabilistic vision-language models and dense associative memories: they conflate semantic affinity with factual existence and structurally fail to encode negative constraints. To this end, we introduce PolarMem, a training-free Polarized Latent Graph Memory designed to ground agent reasoning in verifiable evidence. PolarMem transforms fuzzy perceptual likelihoods into discrete logical constraints through non-parametric distributional partitioning. Furthermore, it employs a polarized graph topology with orthogonal inhibitory connections to explicitly store verified negation as a primary cognitive state. At inference time, we enforce a logic-dominant retrieval paradigm, suppressing hallucinatory patterns that violate negative constraints. Extensive evaluation across eight frozen Vision--Language Models and six benchmarks demonstrates that PolarMem functions as a robust cognitive system, establishing a foundation for verifiable multimodal agents.`,
+                            pdf: "https://arxiv.org/pdf/2602.00415",
                             others: null
                         });
                     </script>
 
 
+                    <!-- M3 Prune -->
+                    <tr>
+                        <td width="25%" id="M3Prune-img" style="vertical-align: top;"></td>
+                        <td valign="top" width="75%" id="M3Prune-txt"></td>
+                    </tr>
+                    <script type="text/javascript">
+                        createProjectElement(
+                            id = "M3Prune", {
+                            title: "M<sup>3</sup>Prune: Hierarchical Communication Graph Pruning for Efficient Multi-Modal Multi-Agent Retrieval-Augmented Generation",
+                            paper_url: "https://arxiv.org/pdf/2511.19969",
+                            authors: "Weizi Shao, Taolin Zhang, <b>Zijie Zhou</b>, Chen Chen, Chengyu Wang, Xiaofeng Heg",
+                            conference: "arXiv preprint 2025",
+                            image: "figures/m3prune.png",
+                            abstract: `Recent advancements in multi-modal retrieval-augmented generation (mRAG), which enhance multi-modal large language models (MLLMs) with external knowledge, have demonstrated that the collective intelligence of multiple agents can significantly outperform a single model through effective communication. Despite impressive performance, existing multi-agent systems inherently incur substantial token overhead and increased computational costs, posing challenges for large-scale deployment. To address these issues, we propose a novel Multi-Modal Multi-agent hierarchical communication graph PRUNING framework, termed M<sup>3</sup>Prune. Our framework eliminates redundant edges across different modalities, achieving an optimal balance between task performance and token overhead. Specifically, M3Prune first applies intra-modal graph sparsification to textual and visual modalities, identifying the edges most critical for solving the task. Subsequently, we construct a dynamic communication topology using these key edges for inter-modal graph sparsification. Finally, we progressively prune redundant edges to obtain a more efficient and hierarchical topology. Extensive experiments on both general and domain-specific mRAG benchmarks demonstrate that our method consistently outperforms both single-agent and robust multi-agent mRAG systems while significantly reducing token consumption.`,
+                            pdf: "https://arxiv.org/pdf/2511.19969",
+                            others: null
+                        });
+                    </script>
+
+                    <!-- TAI -->
+                    <tr>
+                        <td width="25%" id="TAI-img" style="vertical-align: top;"></td>
+                        <td valign="top" width="75%" id="TAI-txt"></td>
+                    </tr>
+                    <script type="text/javascript">
+                        createProjectElement(
+                            id = "TAI", {
+                            title: "A Preference-Driven Methodology for Efficient Code Generation",
+                            paper_url: "https://ieeexplore.ieee.org/document/11273185",
+                            authors: "Yuqi Li, <b>Zijie Zhou</b>, Zhiyuan Peng, Junhao Dong, Haochen You, Renye Yan, Shiping Wen, Yingli Tian, Tingwen Huang",
+                            conference: "IEEE Transactions on Artificial Intelligence, 2025",
+                            image: "figures/tai.png",
+                            abstract: `With the rise of Large Language Models (LLMs), significant progress has been made in research related to code automation within the field of software engineering. Among these developments, the code generation task has attracted considerable attention from both academia and industry due to its broad applicability. However, most existing studies focus primarily on improving the correctness of the code generated by LLMs, while overlooking the efficiency attributes of the code. As a result, LLMs often produce correct code without considering human preferences for efficiency. Efficient code not only conserves resources but also enhances the user experience. For online optimization scenarios, we find that the fixed clipping mechanism of Group Relative Policy Optimization (GRPO) can lead to entropy collapse, causing premature convergence to suboptimal solutions. To address this, we propose DC-GRPO. The method employs a multi-level reward that accounts for compilation success, functional correctness, and execution efficiency to alleviate sparse-reward issues. In addition, a dynamic clipping mechanism based on a four-quadrant analysis of advantage and generation probability adapts the clipping bounds via a nonlinear mapping, encouraging low-probability/high-reward responses while suppressing high-probability/low-reward ones. In our experiments on a 1.5B-parameter code model, DC-GRPO achieves an eff@5 of 13.4%, an improvement of 1.2 percentage points over standard GRPO, and shows consistent gains over other baselines on code-oriented LLMs.`,
+                            pdf: "https://ieeexplore.ieee.org/document/11273185",
+                            others: null
+                        });
+                    </script>
+
+
+                    <!-- icann24 -->
                     <tr>
                         <td width="25%" id="icann24-img" style="vertical-align: top;"></td>
                         <td valign="top" width="75%" id="icann24-txt"></td>
@@ -171,31 +204,13 @@
                             image: "figures/icann_24.png",
                             abstract: `&nbsp;&nbsp; In this paper, we present a novel approach to address the challenges of small object detection. The proposed method combines multi-scale distillation and bidirectional feature fusion to enhance the performance of small object detection models. By leveraging the knowledge of a teacher model, the student model captures both high-level and low-level features, leading to improved detection results. Then, bidirectional feature fusion aggregates multi-layer features within the student more effectively via a convolutional attention mechanism and pyramid pooling loss function. Extensive experiments demonstrate that the approach significantly improves small object detection performance over baselines, validating the use of multi-scale knowledge distillation and feature fusion techniques for this task.`,
                             pdf: "https://doi.org/10.1007/978-3-031-72335-3_14",
-                            bibtex: `@InProceedings{10.1007/978-3-031-72335-3_14, <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;author="Wang, Lingyu <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;and Zhou, Zijie <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;and Shi, Guanqun <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;and Guo, Junkang <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;and Liu, Zhigang", <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;editor="Wand, Michael <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;and Malinovsk{\'a}, Krist{\'i}na <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;and Schmidhuber, J{\"u}rgen <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;and Tetko, Igor V.", <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;title="Small Object Detection Based on Bidirectional Feature Fusion and Multi-scale Distillation", <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;booktitle="Artificial Neural Networks and Machine Learning -- ICANN 2024", <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;year="2024", <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;publisher="Springer Nature Switzerland", <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;address="Cham", <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;pages="200--214", <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;isbn="978-3-031-72335-3" <br>
-                                    }
-                                    `,
                             others: null
                         });
                     </script>
 
 
-                    <tr>
+                    <!-- drilling -->
+                    <!-- <tr>
                         <td width="25%" id="drilling-img" style="vertical-align: top;"></td>
                         <td valign="top" width="75%" id="drilling-txt"></td>
                     </tr>
@@ -219,10 +234,10 @@
                                     }`,
                             others: null
                         });
-                    </script>
+                    </script> -->
 
 
-                    <tr>
+                    <!-- <tr>
                         <td width="25%" id="3dSpatial-img" style="vertical-align: top;"></td>
                         <td valign="top" width="75%" id="3dSpatial-txt"></td>
                     </tr>
@@ -258,7 +273,7 @@
                                     }`,
                             others: null,
 
-                        });
+                        }); -->
                     </script>
 
 
@@ -296,7 +311,7 @@
                                 <br>
                                 <p align="left">
                                     <font size="2">
-                                        © Zijie Zhou August, 2025
+                                        © Zijie Zhou August, 2026
                                         <!-- Last updated: August, 04, 2025 -->
                                     </font>
                                 </p>
